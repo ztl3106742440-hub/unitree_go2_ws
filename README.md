@@ -26,7 +26,7 @@ git clone https://github.com/ztl3106742440-hub/unitree_go2_ws.git
 ```
 进入工作空间：
 
-cd unitree_go2_ws
+`cd unitree_go2_ws`
 ## 三、安装依赖
 1. ROS 依赖（推荐方式）
 ```
@@ -42,9 +42,9 @@ rosdep install --from-paths src --ignore-src -r -y
 
 ## 四、编译工作空间
 `colcon build`
+
 编译完成后，source 本地环境：
-
 `source install/setup.bash`
-👉 建议加入 ~/.bashrc：
 
+👉 建议加入 ~/.bashrc：
 `echo "source ~/unitree_go2_ws/install/setup.bash" >> ~/.bashrc`
