@@ -1,0 +1,22 @@
+# ===== ROS2 / colcon =====
+build/
+install/
+log/
+
+# ===== Python =====
+__pycache__/
+*.pyc
+
+# ===== VSCode =====
+.vscode/
+*.code-workspace
+
+# ===== Linux =====
+*.swp
+.DS_Store
+
+# ===== CMake =====
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
