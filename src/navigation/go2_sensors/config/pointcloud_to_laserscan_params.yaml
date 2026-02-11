@@ -1,0 +1,31 @@
+/**:
+  ros__parameters:
+    # 输入点云话题（Unitree Go2 UTlidar）
+    cloud_in: /utlidar/cloud_deskewed
+    # 输出激光扫描话题
+    scan_out: /scan
+
+    # 坐标系设置
+    target_frame: radar  # 输出激光数据的目标坐标系
+
+    # 激光扫描范围（高度方向）
+    min_height: -0.5     # 最小高度（米），相对于target_frame
+    max_height: 1.0      # 最大高度（米），建议略高于雷达安装高度
+
+    # 角度范围
+    angle_min: -3.14159  # 最小角度（弧度），-π
+    angle_max: 3.14159   # 最大角度（弧度），π
+    angle_increment: 0.0087  # 角度增量（约0.5度）
+
+    # 距离范围
+    range_min: 0.1       # 最小距离（米）
+    range_max: 20.0      # 最大距离（米）
+
+    # 扫描时间
+    scan_time: 0.1       # 扫描周期（秒）
+
+    # 并发线程数
+    concurrency_level: 1
+
+    # 使用无穷值
+    use_inf: true
